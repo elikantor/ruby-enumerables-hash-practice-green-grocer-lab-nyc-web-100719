@@ -45,10 +45,11 @@ end
 
 
 def checkout(items, coupons)
-  consolidate_cart(items)
-  apply_coupons(coupons)
-  apply_clearance(consolidate_cart)
+  hash_cart = consolidate_cart(items)
+  applied_coupons = apply_coupons(hash_cart, coupons)
+  applied_discount = apply_clearance(applied_coupons)
 
+  
   
 
 end
