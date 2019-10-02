@@ -37,21 +37,13 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  new_cart = {}
+
 
   cart.map { |ele_hash, stats|
     binding.pry
-    price = ele_hash[:price]
-  
-    if ele_hash[:clearance] == true 
-      ele_hash[:price] = (price * 0.8)
-      new_cart << ele_hash
-    elsif
-      new_cart << ele_hash
-    end
+
   }
   
-  return new_cart
-  
+  cart
 end  
   
