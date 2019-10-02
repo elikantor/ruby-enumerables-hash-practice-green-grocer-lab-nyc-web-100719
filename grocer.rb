@@ -46,6 +46,7 @@ def apply_clearance(cart)
       new_cart << ele_hash
     elsif
       new_cart << ele_hash
+    end
   }
   
   return new_cart
