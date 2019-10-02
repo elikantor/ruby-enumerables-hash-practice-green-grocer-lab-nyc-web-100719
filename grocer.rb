@@ -40,7 +40,7 @@ def apply_clearance(cart)
 
   cart.map { |ele_hash, ele|
     
-    ele_hash
+    ele[:price] -= ele
     
 
 
