@@ -39,7 +39,8 @@ end
 def apply_clearance(cart)
 
   cart.map { |ele_hash, ele|
-    binding.pry
+    
+    ele_hash
     
 
 
