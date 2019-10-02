@@ -39,7 +39,7 @@ end
 def apply_clearance(cart)
   new_cart = {}
 
-  cart.map { |ele_hash|
+  cart.map { |ele_hash, stats|
     binding.pry
     price = ele_hash[:price]
   
