@@ -39,7 +39,7 @@ end
 def apply_clearance(cart)
   new_cart = {}
 
-  cart.each { |ele_hash|
+  cart.map { |ele_hash|
     price = ele_hash[:price]
   
     if ele_hash[:clearance] == true 
