@@ -37,11 +37,18 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  binding.pry
+  new_cart = {}
+  price = ele_hash[:price]
   
+  cart.each { |ele_hash|
+    if ele_hash[:clearance] == true 
+      ele_hash[:price] = (price * 0.8)
+      new_cart << ele_hash
+    elsif
+      new_cart << ele_hash
+  }
   
-  
-  
+  return new_cart
   
 end  
   
