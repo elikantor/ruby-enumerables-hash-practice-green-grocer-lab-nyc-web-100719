@@ -37,11 +37,18 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-
   cart.map { |ele_hash, ele|
     ele[:price] -= ele[:price] * 0.2 if ele[:clearance]
   }
-  
   cart
 end  
+
+
+def checkout()
+
   
+
+end
+
+
+
